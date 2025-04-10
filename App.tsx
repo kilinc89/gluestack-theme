@@ -32,7 +32,10 @@ export default function App() {
           <Button variant="outline" size="xl" onPress={toggleColorMode} p="$3" mx="$16" mt="$16">
             <ButtonText>{colorMode}</ButtonText>
           </Button>
-          <Button onPress={toggleColorMode} size="xl" p="$3" mx="$16" mt="$16">
+          <Button variant="solid" action="primary" onPress={toggleColorMode} size="xl" p="$3" mx="$16" mt="$16">
+            <ButtonText>{colorMode}</ButtonText>
+          </Button>
+          <Button variant="solid" action="secondary" onPress={toggleColorMode} size="xl" p="$3" mx="$16" mt="$16">
             <ButtonText>{colorMode}</ButtonText>
           </Button>
           <Text mt="$16" color="$red900" fontWeight="$bold">
