@@ -7,13 +7,13 @@ export const Button = createStyle({
   'justifyContent': 'center',
   'alignItems': 'center',
 
-  '_text': {
-    color: '$textLight0',
+/*   '_text': {
+    color: '$textLight400',
     fontWeight: '$semibold',
     _dark: {
       color: '$textDark0',
     },
-  },
+  }, */
 
   '_icon': {
     color: '$textLight0',
@@ -439,13 +439,49 @@ export const Button = createStyle({
         ':active': {
           bg: 'transparent',
         },
-        '_dark': {
+        _text: {
+          'color': '$warning700',
+          ':hover': {
+            color: '$warning700',
+          },
+          ':active': {
+            color: '$warning700',
+          },
+        },
+        _dark: {
           'bg': 'transparent',
           ':hover': {
             bg: '$backgroundDark900',
           },
           ':active': {
             bg: 'transparent',
+          },
+          _text: {
+            'color': '$success700',
+            ':hover': {
+              color: '$success700',
+            },
+            ':active': {
+              color: '$textDark0',
+            },
+          },
+          _spinner: {
+            'props': { color: '$textDark0' },
+            ':hover': {
+              props: { color: '$textDark0' },
+            },
+            ':active': {
+              props: { color: '$textDark0' },
+            },
+          },
+          _icon: {
+            'props': { color: '$textDark0' },
+            ':hover': {
+              props: { color: '$textDark0' },
+            },
+            ':active': {
+              props: { color: '$textDark0' },
+            },
           },
         },
       },
@@ -476,6 +512,35 @@ export const Button = createStyle({
           ':active': {
             props: { color: '$textLight0' },
           },
+          _dark: {
+          _text: {
+            'color': '$textDark0',
+            ':hover': {
+              color: '$textDark0',
+            },
+            ':active': {
+              color: '$textDark0',
+            },
+          },
+          _spinner: {
+            'props': { color: '$textDark0' },
+            ':hover': {
+              props: { color: '$textDark0' },
+            },
+            ':active': {
+              props: { color: '$textDark0' },
+            },
+          },
+          _icon: {
+            'props': { color: '$textDark0' },
+            ':hover': {
+              props: { color: '$textDark0' },
+            },
+            ':active': {
+              props: { color: '$textDark0' },
+            },
+          },
+        },
         },
         _dark: {
           _text: {

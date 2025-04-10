@@ -21,11 +21,20 @@ export default function App() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <GluestackUIProvider config={config}>
-        <Button onPress={toggleColorMode} p="$3" mx="auto" mt="$16">
+        <Button variant="outline" size="xl" onPress={toggleColorMode} p="$3" mx="$16" mt="$16">
           <ButtonText>{colorMode}</ButtonText>
         </Button>
 
+
+
+
         <Theme name={colorMode}>
+          <Button variant="outline" size="xl" onPress={toggleColorMode} p="$3" mx="$16" mt="$16">
+            <ButtonText>{colorMode}</ButtonText>
+          </Button>
+          <Button onPress={toggleColorMode} size="xl" p="$3" mx="$16" mt="$16">
+            <ButtonText>{colorMode}</ButtonText>
+          </Button>
           <Text mt="$16" color="$red900" fontWeight="$bold">
             hello world
           </Text>
